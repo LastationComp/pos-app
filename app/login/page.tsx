@@ -2,8 +2,6 @@ import Image from 'next/image';
 import logbag from '@/app/img/Login-background.png';
 import dynamic from 'next/dynamic';
 import loginimg from '@/app/img/logologin.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
   return (
@@ -22,7 +20,29 @@ export default function Home() {
                     />
                   </svg>
                 </div>
-                <div className="flex justify-center">
+                <div className="flex justify-center w-full mt-[50px]">
+                  <input
+                    type="text"
+                    id="username"
+                    className="bg-transparent border border-white text-white text-sm rounded-md focus:ring-blue-500 
+            focus:border-blue-500 outline-0 block w-[300px] h-[50px] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white 
+            dark:focus:ring-blue-500 dark:focus:border-blue-500 placeholder:text-white/80 focus:text-white transition hover:border-blue-500 delay-75"
+                    placeholder="USERNAME"
+                    required
+                  />
+                </div>
+                <div className="flex justify-center w-full">
+                  <input
+                    type="password"
+                    id="username"
+                    className="bg-transparent border border-white text-white text-sm rounded-md focus:ring-blue-500 
+            focus:border-blue-500 outline-0 block w-[300px] h-[50px] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white 
+            dark:focus:ring-blue-500 dark:focus:border-blue-500 placeholder:text-white/80 transition hover:border-blue-500"
+                    placeholder="PIN"
+                    required
+                  />
+                </div>
+                <div className="flex justify-center mt-[25px]">
                   <button
                     type="button"
                     className="py-2.5 px-5 me-2 mb-2 
@@ -30,10 +50,9 @@ export default function Home() {
               border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 
               dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 
               dark:border-gray-600 dark:hover:text-white 
-              dark:hover:bg-gray-700 w-[300px] h-[50px] text-lg flex justify-center gap-5"
+              dark:hover:bg-gray-700 w-[300px] h-[50px] text-lg"
                   >
-                    <FontAwesomeIcon icon={faRightToBracket} className="w-5 my-auto" />
-                    <div className="my-auto">L O G I N</div>
+                    L O G I N
                   </button>
                 </div>
               </div>

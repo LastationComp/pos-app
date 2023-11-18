@@ -1,27 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Poppins:wght@300&display=swap');
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  ::placeholder {
+    font-family: 'Crimson Text', serif;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .poppins {
+    font-family: 'Poppins', sans-serif;
+  }
+  .top-mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bg-gradient-login {
+    height: 100wh;
+    /* background-color: #28428F;  */
+    background-image: linear-gradient(to bottom right, #28428f, #242424 100%);
+  }
 }

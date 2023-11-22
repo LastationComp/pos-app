@@ -41,7 +41,7 @@ export async function POST(req: Request) {
 
   const { name } = await req.json();
 
-  if (!name || name == '')
+  if (!name)
     return Response.json({
       success: false,
       customer: data.customers[data.customers.length - 1],

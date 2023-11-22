@@ -66,9 +66,7 @@ export default function Member() {
                             12
                         </td>
                         <td className="px-6 py-4">
-                            <button type="button" className="flex justify-start mx-2  text-white absolute end-2.5 bottom-2.5 bg-purple-500 hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-2 py-2 dark:bg-purple-600 dark:hover:bg-purple-600 dark:focus:ring-purple-600">
-                                Member
-                            </button>  
+                            <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
                         </td>
                     </tr>
                     <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
@@ -91,9 +89,7 @@ export default function Member() {
                             12
                         </td>
                         <td className="px-6 py-4">
-                            <button type="button" className="flex justify-start mx-2  text-white absolute end-2.5 bottom-2.5 bg-purple-500 hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-2 py-2 dark:bg-purple-600 dark:hover:bg-purple-600 dark:focus:ring-purple-600">
-                            Member
-                            </button>    
+                            <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
                         </td>
                     </tr>
                 </tbody>

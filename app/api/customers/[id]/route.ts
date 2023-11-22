@@ -1,30 +1,69 @@
+import { Validator } from '@/app/_lib/Validator';
 import { promises as fs } from 'fs';
 
-export async function GET(req: Request) {
+export async function GET(route: { params: { id: string } }) {
   const jsonPath = process.cwd() + '/app/_lib/db.json';
-  const url = new URL(req.url);
-  const splitting: string = url.pathname;
-  const params: any[] = splitting.split('/');
   const file = await fs.readFile(jsonPath, 'utf8');
   const data = JSON.parse(file);
-  const customer: any[] = data.customers;
-//   const customersDetail = customer.filter((data) => data.id == params[3]);
- const customersDetail = data.customers.filter((data: any) => data.id == params[3]);
+  const customersDetail = data.customers.filter((data: any) => data.id == route.params.id);
   return Response.json({
     customers: customersDetail[0],
   });
 }
 
-export async function POST(req: Request) {
+export async function POST(req: Request, route: { params: { id: string } }) {
+  const { name, email, phone } = await req.json();
+
   const jsonPath = process.cwd() + '/app/_lib/db.json';
-  const url = new URL(req.url);
-  const splitting: string = url.pathname;
-  const params: any[] = splitting.split('/');
   const file = await fs.readFile(jsonPath, 'utf8');
   const data = JSON.parse(file);
-  const customer: any[] = data.customers;
-  const customersDetail = customer.filter((data) => data.id == 'sdsda');
+
+  const oldData = data.customers.filter((data: any) => data.id == route.params.id);
+
+  if (!oldData[0])
+    return Response.json({
+      success: false,
+      message: 'Data Not Found',
+    });
+
+  const newData = {
+    ...oldData[0],
+    name: name,
+    email: email,
+    phone: phone,
+  };
+  const customer = data.customers.filter((data: any) => data.id !== route.params.id);
+  await customer.push(newData);
+  customer.sort((a: any, b: any) => {
+    if (a.customer_code < b.customer_code) return -1;
+  });
+  data.customers = customer;
+
+  await fs.writeFile(jsonPath, JSON.stringify(data));
   return Response.json({
-    customers: customersDetail,
+    data: 'success',
+    customer: data.customers,
+  });
+}
+
+export async function DELETE(req: Request) {
+  const jsonPath = process.cwd() + '/app/_lib/db.json';
+  const file = await fs.readFile(jsonPath, 'utf8');
+  const data = JSON.parse(file);
+  const url = new URL(req.url)
+  const id = url.pathname.toString().split('/')[3]
+  const exists = data.customers.filter((data: any) => data.id == id);
+  if (!exists[0])
+    return Response.json({
+      success: false,
+      message: 'Data Not Found',
+    });
+
+  const newData = data.customers.filter((data: any) => data.id !== id);
+  data.customers = newData
+  await fs.writeFile(jsonPath, JSON.stringify(data));
+  return Response.json({
+    success: true,
+    message: 'Data Deleted Successfully',
   });
 }

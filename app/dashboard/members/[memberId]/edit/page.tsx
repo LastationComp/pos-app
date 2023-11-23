@@ -4,7 +4,7 @@ export default function Test({params} : {params:{memberId: string}}) {
   return (
     <div className="flex justify-center bg-gray-300 h-screen max-w-full">
       <div className="block w-[700px] p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[400px] mt-[70px] drop-shadow-xl">
-        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white font-poppins text-blue-700">
+        <h5 className="mb-2 text-2xl font-bold tracking-tight dark:text-white font-poppins text-blue-700">
           Edit Member
         </h5>
         <form action="">

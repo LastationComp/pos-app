@@ -1,7 +1,15 @@
+"use client"
+import { faPencil, faTrash } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+import useSWR from 'swr'
 
 export default function Member() {
-  return (
+    const fetcher = (url:string) => fetch(url).then(res => res.json())
+    const {data} = useSWR("/api/customers", fetcher)
+    console.log(data)
+
+    return (
     <div className='flex px-[120px] py-[30px]'>
         <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
             <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
@@ -10,11 +18,11 @@ export default function Member() {
                     <div className="relative">
                         <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                             <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                             </svg>
                         </div>
-                        <input type="search" id="default-search" className="block w-[300px] p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-purple-700 focus:border-purple-700 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-700 dark:focus:border-purple-700 placeholder:font-sans outline-0 hover:border-purple-500 transition hover:border-1" placeholder="Search Mockups, Logos..." required />
-                        <button type="button" className="flex justify-start mx-2  text-white absolute end-2.5 bottom-2.5 bg-purple-500 hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-2 py-2 dark:bg-purple-600 dark:hover:bg-purple-600 dark:focus:ring-purple-600">
+                        <input type="search" id="default-search" className="block w-[300px] p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-purple-700 focus:border-purple-700 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-700 dark:focus:border-purple-700 placeholder:font-sans outline-0 hover:border-purple-500 transition hover:border-1" placeholder="Search" required />
+                        <button type="button" className="flex justify-start mx-2  text-white absolute end-2.5 bottom-2.5 bg-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2 dark:bg-blue-600 dark:hover:bg-blue-600 dark:focus:ring-blue-600">
                         <svg className='mr-2 mt-1' xmlns="http://www.w3.org/2000/svg" fill='#ffffff' height="1em" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
                         Member
                         </button>                      
@@ -46,52 +54,60 @@ export default function Member() {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                    {!data && <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                         <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            1
+                            Loading ID
                         </th>
                         <td className="px-6 py-4">
-                            SUNARDI
+                            Loading Name
                         </td>
                         <td className="px-6 py-4">
-                            8864758764
+                            Loading Customer Code
                         </td>
                         <td className="px-6 py-4">
-                            sunardi@gmail.com
+                            Loading Email
                         </td>
                         <td className="px-6 py-4">
-                            089518444882
+                            Loading
                         </td>
                         <td className="px-6 py-4">
-                            12
+                            Loading Point
                         </td>
                         <td className="px-6 py-4">
-                            <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                            Loading Action
                         </td>
-                    </tr>
-                    <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                    </tr>}
+                    {data?.customers.map((data:any,index:number) => (
+                    <tr key={data.id} className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                         <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            1
+                            {index+1}
                         </th>
                         <td className="px-6 py-4">
-                            SUNARDI
+                            {data.name}
                         </td>
                         <td className="px-6 py-4">
-                            8864758764
+                            {data.customer_code}
                         </td>
                         <td className="px-6 py-4">
-                            sunardi@gmail.com
+                            {data.email}
                         </td>
                         <td className="px-6 py-4">
-                            089518444882
+                            {data.phone}
                         </td>
                         <td className="px-6 py-4">
-                            12
+                            {data.point}
                         </td>
                         <td className="px-6 py-4">
-                            <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                            <div className="flex gap-3">
+                                <div className='my-2 flex gap-3'>
+                                    <FontAwesomeIcon className='hover:cursor-pointer' icon={faPencil} size='xl' />
+                                    <FontAwesomeIcon className='hover:cursor-pointer' icon={faTrash} size="xl" style={{color: "#7d7f82",}} />
+                                </div>
+                                <a href="#" className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Pilih</a>
+                            </div>
                         </td>
                     </tr>
+                    ))}
                 </tbody>
             </table>
         </div>

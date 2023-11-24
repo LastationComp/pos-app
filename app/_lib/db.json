@@ -34,14 +34,49 @@
     }
   ],
   "customers": [
-    { "id": "4e3d0a88-b76e-423d-b480-bd0cbce9d24a", "customer_code": "MM_0001", "name": "nafiu", "email": "nafiulrazz@gmail.com", "phone": "12334", "point": 0 },
-    { "id": "b9e53108-9235-4686-b352-fffa4368bdaa", "customer_code": "MM_0003", "name": "Jihan", "email": "jihan@example.com", "phone": "08974", "point": 3 },
-    { "id": "817687e2-5910-4d42-a4f6-87fd792f6b84", "customer_code": "MM_0004", "name": "Losinto", "email": "test@gmail.com", "phone": "083532", "point": 123 },
-    { "id": "5235b210-1673-441b-8ef0-2925f4f7924a", "customer_code": "MM_0005", "name": "nafiul" }
+    {
+      "id": "eb1c80d8-6c06-4dae-ab52-77a50273c8f4",
+      "customer_code": "MM_0001",
+      "name": "Bagus",
+      "phone": "0896",
+      "email": "test",
+      "point": 0
+    },
+    {
+      "id": "0ff881da-ba19-406f-b2c7-5e9481b4c412",
+      "customer_code": "MM_0002",
+      "name": "Affa",
+      "phone": "7657567",
+      "email": "tetetet",
+      "point": 0
+    }
   ],
   "employees": [
-    { "id": "af2e0eca-d7ee-4515-97dc-7f1dbf5f852e", "employee_code": "12312312", "name": "Super Admin", "avatar_url": "https://avatar", "permissions": ["product_create", "product_update", "product_detail", "product_delete"] },
-    { "id": "dea45470-b2af-4a97-acd9-57ffae0c0a03", "employee_code": "12312367", "name": "Emplooye 1", "avatar_url": "https://avatar", "permissions": ["product_create", "product_detail"] },
-    { "id": "005b0e02-7316-4aec-92f4-27c7f11d8797", "employee_code": "12312590", "name": "Emplooye 2", "avatar_url": "https://avatar", "permissions": ["product_create", "product_detail"] }
+    {
+      "id": "af2e0eca-d7ee-4515-97dc-7f1dbf5f852e",
+      "employee_code": "12312312",
+      "name": "Super Admin",
+      "avatar_url": "https://avatar",
+      "permissions": [
+        "product_create",
+        "product_update",
+        "product_detail",
+        "product_delete"
+      ]
+    },
+    {
+      "id": "dea45470-b2af-4a97-acd9-57ffae0c0a03",
+      "employee_code": "12312367",
+      "name": "Emplooye 1",
+      "avatar_url": "https://avatar",
+      "permissions": ["product_create", "product_detail"]
+    },
+    {
+      "id": "005b0e02-7316-4aec-92f4-27c7f11d8797",
+      "employee_code": "12312590",
+      "name": "Emplooye 2",
+      "avatar_url": "https://avatar",
+      "permissions": ["product_create", "product_detail"]
+    }
   ]
 }

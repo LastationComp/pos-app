@@ -87,7 +87,7 @@ export default function Member() {
               />
               <Link href='/dashboard/members/add'
                 type="button"
-                className="flex justify-start mx-2  text-white absolute end-2.5 bottom-2.5 bg-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2 dark:bg-blue-600 dark:hover:bg-blue-600 dark:focus:ring-blue-600"
+                className="flex justify-start mx-2  text-white absolute end-2.5 bottom-2.5 bg-purple-500 hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-2 py-2 dark:bg-purple-600 dark:hover:bg-purple-600 dark:focus:ring-purple-600"
               >
                 <svg
                   className="mr-2 mt-1"

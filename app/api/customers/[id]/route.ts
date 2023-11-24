@@ -23,7 +23,6 @@ export async function POST(req: Request, route: { params: { id: string } }) {
 
   const oldData = data.customers.filter((data: any) => data.id == route.params.id);
 
-
   if (!oldData[0])
     return Response.json({
       success: false,
@@ -36,6 +35,7 @@ export async function POST(req: Request, route: { params: { id: string } }) {
     email: email,
     phone: phone,
   };
+
   const customer = data.customers.filter((data: any) => data.id !== route.params.id);
   await customer.push(newData);
   customer.sort((a: any, b: any) => {

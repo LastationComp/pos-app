@@ -27,7 +27,7 @@ export async function POST(req: Request) {
   const jsonPath = process.cwd() + '/app/_lib/db.json';
   const file = await fs.readFile(jsonPath, 'utf8');
   const data = JSON.parse(file);
-
+  
   const { name, email, phone } = await req.json();
 
   if (!name || !email || !phone)
@@ -51,9 +51,10 @@ export async function POST(req: Request) {
     id: uuidv4(),
     customer_code: 'MM_' + customer_code_final?.toString().padStart(4, '0'),
     name: name,
-    email: email,
     phone: phone,
-    point: 0,
+    email: email,
+    point: 0
+
   });
   await fs.writeFile(jsonPath, JSON.stringify(data));
   return Response.json({

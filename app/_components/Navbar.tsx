@@ -11,7 +11,7 @@ export default function Navbar() {
     const getUpdatePage = () => {
         const dashboard = '/dashboard/'
         if (path == dashboard + 'members') return 'Members'
-
+        if (path == dashboard + 'products') return "Products"
         return 'Dashboard'
     }
   return (

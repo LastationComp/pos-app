@@ -3,10 +3,6 @@ import { faBars } from "@fortawesome/free-solid-svg-icons/faBars";
 import Image from "next/image";
 import Link from "next/link";
 import ButtonLogout from "../_components/buttonlogout";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
-import ButtonLogout from '../_components/buttonlogout';
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const logo = 'https://flowbite.com/docs/images/logo.svg';
 

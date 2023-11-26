@@ -27,7 +27,6 @@ export default function Home() {
                 </div>
                 <div className="flex justify-center">
                   <button
-                  onClick={() => router.push('/dashboard')}
                     type="button"
                     onClick={() => {
                       router.push('/dashboard')

@@ -68,6 +68,6 @@ export async function POST(req: Request) {
   await fs.writeFile(jsonPath, JSON.stringify(data));
   return Response.json({
     success: true,
-    customer: data.customers[data.customers.length - 1],
+    customer: data.customers,
   });
 }

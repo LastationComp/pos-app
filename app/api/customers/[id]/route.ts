@@ -2,7 +2,7 @@ import { Validator } from '@/app/_lib/Validator';
 import { promises as fs } from 'fs';
 
 export async function GET(req: Request, route: { params: { id: string } }) {
-  const jsonPath = process.cwd() + '/app/_lib/db.json';
+  const jsonPath = process.cwd() + '/app/_lib/database/db.json';
   const file = await fs.readFile(jsonPath, 'utf8');
   const data = JSON.parse(file);
   const customersDetail = data.customers.filter((data: any) => data.id == route.params.id);
@@ -16,7 +16,7 @@ export async function POST(req: Request, route: { params: { id: string } }) {
   const { name, email, phone, point } = await req.json();
 
 
-  const jsonPath = process.cwd() + '/app/_lib/db.json';
+  const jsonPath = process.cwd() + '/app/_lib/database/db.json';
   const file = await fs.readFile(jsonPath, 'utf8');
 
   const data = JSON.parse(file);
@@ -52,7 +52,7 @@ export async function POST(req: Request, route: { params: { id: string } }) {
 }
 
 export async function DELETE(req: Request) {
-  const jsonPath = process.cwd() + '/app/_lib/db.json';
+  const jsonPath = process.cwd() + '/app/_lib/database/db.json';
   const file = await fs.readFile(jsonPath, 'utf8');
   const data = JSON.parse(file);
   const url = new URL(req.url)

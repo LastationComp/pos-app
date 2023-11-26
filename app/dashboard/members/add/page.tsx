@@ -25,11 +25,11 @@ export default function Test() {
     if(success){
       Swal.fire({
         title: "Success!",
-        html: `Nama: ${customer.name}
+        html: `Nama: ${name}
                <br>
-               Phone: ${customer.phone}
+               Phone: ${phone}
                <br>
-               Email: ${customer.email}`,
+               Email: ${email}`,
         icon: "success",
         confirmButtonText: "Okay",
       }).then(() => {

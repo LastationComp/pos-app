@@ -152,11 +152,13 @@ export default function Member() {
                 <td className="px-6 py-4">
                   <div className="flex gap-3">
                     <div className="my-2 flex gap-3">
+                      <Link className="mb-3" href={`/dashboard/members/${data.id}/edit`}>
                       <FontAwesomeIcon
                         className="hover:cursor-pointer"
                         icon={faPencil}
                         size="xl"
                       />
+                      </Link>
                       <button
                         className="mb-3"
                         onClick={() => handleDelete(data.id)}

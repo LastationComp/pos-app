@@ -4,7 +4,7 @@ import useSWR from 'swr'
 
 export default function Product() {
     const fetcher = (url:string) => fetch(url).then(res => res.json()) 
-    const {data} = useSWR("/api/products", fetcher)
+    const {data} = useSWR("/api/products?paginate=10&page=1", fetcher)
   return (
     <div className='flex px-[120px] py-[30px]'>
         <div className='flex-col w-[300px]'>  

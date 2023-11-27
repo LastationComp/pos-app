@@ -1,18 +1,21 @@
+'use client'
 import Image from 'next/image';
 import logbag from '@/app/img/Login-background.png';
 import dynamic from 'next/dynamic';
 import loginimg from '@/app/img/logologin.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRightToBracket } from '@fortawesome/free-solid-svg-icons';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
+  const router = useRouter()
   return (
     <>
       <section className="overflow-hidden bg-gradient-login">
-        <Image alt="" src={logbag} tabIndex={-1} className="absolute w-screen h-screen top-0 z-1" />
+        <Image alt="" src={logbag} tabIndex={-1} className="absolute w-screen h-screen top-0 z-1 object-cover" />
         <div className={'container mx-auto relative'}>
           <div className="top-mid h-screen">
-            <div className="grid grid-cols-2 text-white">
+            <div className="grid grid-cols-2 text-white max-sm:grid-cols-1">
               <div className="flex my-auto flex-col gap-5 flex-wrap">
                 <div className="flex justify-center">
                   <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,8 +28,11 @@ export default function Home() {
                 <div className="flex justify-center">
                   <button
                     type="button"
+                    onClick={() => {
+                      router.push('/dashboard')
+                    }}
                     className="py-2.5 px-5 me-2 mb-2 
-              text-sm font-medium text-blue-600 focus:outline-none bg-white rounded-lg 
+               font-medium text-blue-600 focus:outline-none bg-white rounded-lg 
               border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 
               dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 
               dark:border-gray-600 dark:hover:text-white 

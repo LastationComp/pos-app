@@ -1,0 +1,98 @@
+{
+  "products": [
+    {
+      "product_name": "Sangobion",
+      "barcode": "120390129310221",
+      "smallest_selling_unit": "biji",
+      "stock": 80,
+      "selling_units": [
+        { "selling_unit": "kardus", "price": 80000, "stock": 1 },
+        { "selling_unit": "lembar", "price": 8000, "stock": 13 },
+        { "selling_unit": "biji", "price": 1000, "stock": 135 }
+      ]
+    },
+    {
+      "product_name": "Hufagrip",
+      "barcode": "120250129310895",
+      "smallest_selling_unit": "botol",
+      "stock": 25,
+      "selling_units": [
+        { "selling_unit": "kardus", "price": 50000, "stock": 1 },
+        { "selling_unit": "Botol", "price": 15000, "stock": 20 }
+      ]
+    },
+    {
+      "product_name": "Paracetamol",
+      "barcode": "120250129310293",
+      "smallest_selling_unit": "biji",
+      "stock": 40,
+      "selling_units": [
+        { "selling_unit": "kardus", "price": 70000, "stock": 1 },
+        { "selling_unit": "lembar", "price": 15000, "stock": 20 },
+        { "selling_unit": "biji", "price": 1000, "stock": 20 }
+      ]
+    }
+  ],
+  "customers": [
+    { "id": "4e3d0a88-b76e-423d-b480-bd0cbce9d24a", "customer_code": "MM_0001", "name": "nafiu", "email": "nafiulrazz@gmail.com", "phone": "12334", "point": 0 },
+    { "id": "b9e53108-9235-4686-b352-fffa4368bdaa", "customer_code": "MM_0003", "name": "Jihan", "email": "jihan@example.com", "phone": "08974", "point": 3 },
+    { "id": "817687e2-5910-4d42-a4f6-87fd792f6b84", "customer_code": "MM_0004", "name": "Losinto", "email": "test@gmail.com", "phone": "083532", "point": 123 },
+    { "id": "787c1c0f-e660-45d2-b79d-9eb51b5c5ed6", "customer_code": "MM_0007", "name": "Testing", "phone": "342342", "email": "dsfsdfd@gmail.com", "point": 0 },
+    { "id": "354de824-7c43-47d0-961e-ae151499e152", "customer_code": "MM_0010", "name": "zhzappgoakvy", "email": "thyrv@gmail.com", "phone": "807717601", "point": "424" },
+    { "id": "22cfb519-c016-4b94-8dc3-ba0267122745", "customer_code": "MM_8475", "name": "nhdwfnnuykbw", "email": "xratn@gmail.com", "phone": "437887423", "point": "286" },
+    { "id": "58fc4b66-16e4-4958-8d0a-287d0cf9124d", "customer_code": "MM_8476", "name": "odejnctiolfb", "email": "wodej@gmail.com", "phone": "738969139", "point": "270" },
+    { "id": "09e2e704-5b20-484c-94e6-3b7e38dfb918", "customer_code": "MM_8477", "name": "hdjnlbefglln", "email": "pprlj@gmail.com", "phone": "549113683", "point": "019" },
+    { "id": "bb2bf814-43a0-4468-ac95-36e037608ac3", "customer_code": "MM_8478", "name": "ufmhdzdqymlz", "email": "xkmyf@gmail.com", "phone": "773376503", "point": "747" },
+    { "id": "3215e656-4c7d-45d0-ab7f-a02ecafde589", "customer_code": "MM_8479", "name": "ahkechbjygqm", "email": "rwats@gmail.com", "phone": "946948248", "point": "142" },
+    { "id": "016c30b6-84fe-4ea0-8be5-230d4b57233e", "customer_code": "MM_8480", "name": "luwnvffszfaa", "email": "qczrp@gmail.com", "phone": "761478588", "point": "004" },
+    { "id": "7e3f14f9-c6bf-424c-8cfc-3d18625f1b59", "customer_code": "MM_8481", "name": "cdhanolmkmob", "email": "movtz@gmail.com", "phone": "391949473", "point": "018" },
+    { "id": "a536d8a8-b2fa-4404-9dd7-ed27d17f7774", "customer_code": "MM_8482", "name": "pcrzbzindejw", "email": "tvwev@gmail.com", "phone": "986956748", "point": "668" },
+    { "id": "a7874e83-cdec-4a69-91e0-fcc31804271a", "customer_code": "MM_8483", "name": "ghicrtvchplj", "email": "jrxup@gmail.com", "phone": "592683208", "point": "713" },
+    { "id": "43595c82-967a-4bf4-9e65-e8eb74b5ad1f", "customer_code": "MM_8484", "name": "soixaebclnww", "email": "iugsc@gmail.com", "phone": "945343663", "point": "780" },
+    { "id": "20a98f7f-2e15-433f-8236-2ba2ddada802", "customer_code": "MM_8485", "name": "bbgbztlzdegs", "email": "hfxkz@gmail.com", "phone": "161334827", "point": "956" },
+    { "id": "2a6fe023-5677-40a8-89be-ac06b9432718", "customer_code": "MM_8486", "name": "dsldpinxnibt", "email": "byzkh@gmail.com", "phone": "564924178", "point": "246" },
+    { "id": "69d34eba-cd28-49e8-b0b2-1dc2350d81d3", "customer_code": "MM_8487", "name": "ssjnakdxdpbb", "email": "rnmuf@gmail.com", "phone": "068784478", "point": "352" },
+    { "id": "cf2f1b3a-dd3c-4d24-b28b-d19d07d65ee9", "customer_code": "MM_8488", "name": "hmakpczgvxbs", "email": "hnlgd@gmail.com", "phone": "367823968", "point": "009" },
+    { "id": "33fa7aa9-d62d-4c01-aca9-128ddf1ebb0c", "customer_code": "MM_8489", "name": "vuhopkppsmel", "email": "fkpho@gmail.com", "phone": "075092337", "point": "165" },
+    { "id": "10453805-7b8e-4c4b-8849-14f850f7abc3", "customer_code": "MM_8490", "name": "buyxdrzlhvke", "email": "hbnvr@gmail.com", "phone": "959731209", "point": "288" },
+    { "id": "d77edd5a-9edd-4e53-8617-ef45611d85df", "customer_code": "MM_8491", "name": "bhjthudyvprh", "email": "yokqw@gmail.com", "phone": "138445735", "point": "731" },
+    { "id": "9413f029-0b53-4cb4-8193-3bdf4510280e", "customer_code": "MM_8492", "name": "irvhrcvkkxyq", "email": "hxdge@gmail.com", "phone": "964399098", "point": "426" },
+    { "id": "dd9d5b3d-2cab-4ea9-8bec-f584369524cc", "customer_code": "MM_8493", "name": "zzlhecfszuxm", "email": "lptsx@gmail.com", "phone": "555326221", "point": "453" },
+    { "id": "dd475193-9b58-4b49-a9ec-fb8aba784512", "customer_code": "MM_8494", "name": "jzffyrllmvur", "email": "drtrk@gmail.com", "phone": "851348009", "point": "122" },
+    { "id": "8ebc8ef7-cf65-4d1a-b2a0-59be8d5e94c7", "customer_code": "MM_8495", "name": "vbmdrwmnewev", "email": "rieag@gmail.com", "phone": "798380756", "point": "374" },
+    { "id": "655c359d-7d92-44f4-a21a-802a9419ceba", "customer_code": "MM_8496", "name": "aacsdcfuyapq", "email": "ewnvm@gmail.com", "phone": "194164745", "point": "389" },
+    { "id": "7e027815-c1a2-49bf-b006-d33c052da2d5", "customer_code": "MM_8497", "name": "wvornkltejzr", "email": "zwcfc@gmail.com", "phone": "178961592", "point": "706" },
+    { "id": "45562d3a-e652-4fbc-82d9-f5ced35eeff4", "customer_code": "MM_8498", "name": "kfxskdwflcjf", "email": "gmbhr@gmail.com", "phone": "825276055", "point": "132" },
+    { "id": "49afe03f-e952-4a08-a7ef-22a57fa50387", "customer_code": "MM_8499", "name": "ggmzmxshzipt", "email": "neykt@gmail.com", "phone": "785563037", "point": "942" },
+    { "id": "3d5b38a7-611d-43d8-878d-475492a22de2", "customer_code": "MM_8500", "name": "rblssknqdysv", "email": "ezxvz@gmail.com", "phone": "432685956", "point": "455" },
+    { "id": "f2aae5ff-e0ee-49ee-a679-349b80a9f1a1", "customer_code": "MM_8501", "name": "rfbdmrqyzmkb", "email": "uyfxu@gmail.com", "phone": "391041451", "point": "411" },
+    { "id": "df2dcf89-bca9-4d2a-ba67-514e4e8e66ea", "customer_code": "MM_8502", "name": "latfbkhqzrdo", "email": "wkbue@gmail.com", "phone": "079167372", "point": "712" },
+    { "id": "bf9db210-b0f0-48aa-82d2-7a9474c1fbd6", "customer_code": "MM_8503", "name": "ynziahlysdzd", "email": "brjey@gmail.com", "phone": "555699140", "point": "467" },
+    { "id": "a55465a9-31da-4728-ae2f-6b79ff1b8050", "customer_code": "MM_8504", "name": "pypsjfsffsrm", "email": "wvczb@gmail.com", "phone": "757323322", "point": "745" },
+    { "id": "5659f696-7e2a-464d-a9df-389487bded8a", "customer_code": "MM_8505", "name": "wvawemeivnqr", "email": "yssnb@gmail.com", "phone": "381822500", "point": "394" },
+    { "id": "35656fe3-eb1f-4852-9361-89c41e67eac2", "customer_code": "MM_8506", "name": "ojvjeaojxucg", "email": "wynvq@gmail.com", "phone": "253635034", "point": "616" },
+    { "id": "7504f9e2-93f2-48ec-9221-5e9745a66aa3", "customer_code": "MM_8507", "name": "gfytntyumtud", "email": "hvpnq@gmail.com", "phone": "462450561", "point": "960" },
+    { "id": "dc658674-42f3-4de7-ba91-2da96fd8ee42", "customer_code": "MM_8508", "name": "cunxgesryucz", "email": "udipn@gmail.com", "phone": "844898998", "point": "427" },
+    { "id": "2414fc9a-a5d9-4ba2-9416-716607b99ee7", "customer_code": "MM_8509", "name": "uukrpchmfyif", "email": "gduhp@gmail.com", "phone": "914312432", "point": "329" },
+    { "id": "5caf8533-ab39-4547-93f3-263335cbe749", "customer_code": "MM_8510", "name": "kxzacbmsevjj", "email": "frxcp@gmail.com", "phone": "906656063", "point": "221" },
+    { "id": "5fa83caf-aaf2-4d14-bf50-de96734594f0", "customer_code": "MM_8511", "name": "syomdgdkfalw", "email": "rlavx@gmail.com", "phone": "160168006", "point": "349" },
+    { "id": "115907a0-a97c-44f8-970f-877b69f28746", "customer_code": "MM_8512", "name": "ujgemqgavosn", "email": "xroun@gmail.com", "phone": "446143395", "point": "086" },
+    { "id": "5196728c-686e-4d56-ad43-fd6ba7dcf495", "customer_code": "MM_8513", "name": "vmeghinytlkq", "email": "wdxyw@gmail.com", "phone": "917126449", "point": "134" },
+    { "id": "dc38ba9d-0077-48ec-b590-662ad980a6dc", "customer_code": "MM_8514", "name": "dkwylizztxsq", "email": "uqgpv@gmail.com", "phone": "215592326", "point": "011" },
+    { "id": "dd679cfb-c2c7-47d9-8b80-3b0e28e98241", "customer_code": "MM_8515", "name": "zzeuiieqbfza", "email": "ppakb@gmail.com", "phone": "467467768", "point": "254" },
+    { "id": "a9d3630f-4b62-4cab-8a9d-9a8142ba4000", "customer_code": "MM_8516", "name": "mvjtgmzamsxe", "email": "sidwk@gmail.com", "phone": "843827684", "point": "714" },
+    { "id": "8bdb4b51-1685-436e-8e21-3954cf21ccc8", "customer_code": "MM_8517", "name": "yxthvdvuwqup", "email": "gmoad@gmail.com", "phone": "648282220", "point": "270" },
+    { "id": "e81cb8cb-1534-4137-b9fc-fb39089a3480", "customer_code": "MM_8518", "name": "elkpzalpeqyc", "email": "pqyip@gmail.com", "phone": "973085407", "point": "672" },
+    { "id": "96060b18-a4d9-452f-9315-b0f1de3c86bc", "customer_code": "MM_8519", "name": "jluhlebbjxhc", "email": "zgxyi@gmail.com", "phone": "661299235", "point": "264" },
+    { "id": "ef524a98-9260-4802-9a82-f7333f13bc3a", "customer_code": "MM_8520", "name": "jfmmjtrpfngw", "email": "bpyqs@gmail.com", "phone": "020929333", "point": "670" },
+    { "id": "3670f26b-900c-40d8-9ef4-0a729f8b89bb", "customer_code": "MM_8521", "name": "vltkxhnqjysb", "email": "spcxg@gmail.com", "phone": "019962118", "point": "002" },
+    { "id": "cb3e5950-54e6-4e94-b65b-2535690c4fbd", "customer_code": "MM_8522", "name": "cbltwtamtzys", "email": "teatg@gmail.com", "phone": "769795716", "point": "162" },
+    { "id": "79a40f74-6fa1-46db-bb58-d38bd9757f7d", "customer_code": "MM_8523", "name": "nidupiumetyu", "email": "rjlnt@gmail.com", "phone": "282470436", "point": "266" },
+    { "id": "d3f81115-c1d8-4a31-a1f4-e0c4e2c8765a", "customer_code": "MM_9999", "name": "yxxyldhxidja", "email": "fgnrm@gmail.com", "phone": "828006064", "point": "023" }
+  ],
+  "employees": [
+    { "id": "af2e0eca-d7ee-4515-97dc-7f1dbf5f852e", "employee_code": "12312312", "name": "Super Admin", "avatar_url": "https://avatar", "permissions": ["product_create", "product_update", "product_detail", "product_delete"] },
+    { "id": "dea45470-b2af-4a97-acd9-57ffae0c0a03", "employee_code": "12312367", "name": "Emplooye 1", "avatar_url": "https://avatar", "permissions": ["product_create", "product_detail"] },
+    { "id": "005b0e02-7316-4aec-92f4-27c7f11d8797", "employee_code": "12312590", "name": "Emplooye 2", "avatar_url": "https://avatar", "permissions": ["product_create", "product_detail"] }
+  ]
+}

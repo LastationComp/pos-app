@@ -125,7 +125,7 @@ export default function TransactionDetail({ trx, setTrx }: { trx: any[]; setTrx:
             </div> */}
           </div>
         </div>
-        <div className="divide-y bg-gray-700 mt-5 px-3 rounded ">
+        <div className="divide-y bg-gray-300 mt-5 px-3 rounded ">
           <div className="flex flex-col gap-3 mb-3">
             <div className="flex justify-between">
               <span className="w-full">PNP</span>
@@ -150,7 +150,7 @@ export default function TransactionDetail({ trx, setTrx }: { trx: any[]; setTrx:
             </div>
           </div>
           <div className="py-3">
-            <div className="bg-gray-900 rounded flex flex-wrap justify-between items-center">
+            <div className="bg-gray-300 rounded flex flex-wrap justify-between items-center">
               <span className="px-3">Subtotal</span>
 
               <span className="px-3">

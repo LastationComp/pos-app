@@ -3,9 +3,9 @@ import RightBar from "./_component/rightBar";
 export default function salesHistory() {
   return (
     <>
-      <div className="grid grid-cols-2">
-        <div className="ml-[100px]">
-          <div className="w-[700px]  p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
+      <div className="grid grid-cols-1">
+        <div className="mx-5">
+          <div className="w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-10">
             <div className="flex flex-row flex-wrap">
               <div className="flex justify-start grow">
                 <label className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">
@@ -32,8 +32,8 @@ export default function salesHistory() {
                   <input
                     type="search"
                     id="default-search"
-                    className="block w-[300px] h-[45px] p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="Search Mockups, Logos..."
+                    className="block w-[300px] h-[45px] p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-200 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Search"
                     required
                   />
                 </div>
@@ -57,8 +57,8 @@ export default function salesHistory() {
               </div>
             </div>
 
-            <div className="relative overflow-x-auto  sm:rounded-lg mt-10">
-              <table className=" w-full text-sm text-left rtl:text-right text-blue-100 dark:text-blue-100">
+            <div className="w-auto max-h-[500px] overflow-x-auto shadow-md sm:rounded-lg mt-10">
+              <table className=" xl:w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 table-fixed w-full">
                 <thead className="text-xs text-poppins text-gray-500 uppercase bg-white border-b border-white dark:text-white">
                   <tr>
                     <th scope="col" className="px-6 py-3 bg-white">
@@ -103,9 +103,9 @@ export default function salesHistory() {
             </div>
           </div>
         </div>
-        <div className="flex justify-end">
+        {/* <div className="flex justify-end">
             <RightBar />
-        </div>
+        </div> */}
       </div>
     </>
   );

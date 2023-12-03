@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# POS
 
-First, run the development server:
+Kami sudah mengerjakan halaman login, halaman dashboard, halaman members, halaman product, dan halaman sales history
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Halaman Login
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Tampilan dan tombol login akan direct ke dalam dashboard product
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## halaman dashboard
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Side Bar menampilkan tab untuk menuju halaman members dan halaman product
+- Nav Bar menampilkan logo serta tulisan dahboard dan tombol logout
+## Halaman Members
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Menampilkan data members yang sudah dipaginasi dan sudah dapat disearch untuk mencari members tertentu
+- Dapat Diatur Row per page nya
+- Dapat Menambah Members
+- Dapat Mengubah Members
+- Dapat Menghapus Members
+## Halaman Product
 
-## Deploy on Vercel
+- Sudah di Pagination dan search sebuah Product
+- Sudah dapat memilih product menggunakan checkbox 
+- Saat Product dipilih menggunakan checkbox otomatis product ditambahkan ke right bar
+- Di Rightbar dapat mengubah selling unit menjadi kardus, lembar dan biji
+- Saat Selling Unit dipilih akan memilih harga yang berbeda berbed
+- quantity dapat di ubah dan harga akan otomatis berubah sesuai quantity yang di pilih
+- Terdapat Field untuk mengisi inputan uang yang dibayar dari customers
+- Kembalian otomatis akan berkurang sesuai perhitungan antara total belanja dan total uang dari customers
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Halaman Sales History
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Table Yang Menampilkan Sales History

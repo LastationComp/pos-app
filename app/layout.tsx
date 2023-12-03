@@ -4,7 +4,7 @@ import './globals.css'
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
-const inter = Inter({ subsets: ['latin'] })
+const poppins = Poppins({ subsets: ['latin'], weight: '400' })
 
 export const metadata: Metadata = {
   title: 'POS',
@@ -17,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='light'>
-      <body className={'poppins' }>{children}</body>
+    <html lang="en" className='light h-screen'>
+      <body className={poppins.className}>{children}</body>
     </html>
   )
 }

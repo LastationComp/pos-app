@@ -32,7 +32,6 @@ export async function POST(req: Request) {
 
   for (let i = 0; i < many; i++) {
     await data.products.push({
-      id: uuidv4(),
       barcode: randomNumber(15),
       product_name: randomString(9),
       stock: randomNumber(2),

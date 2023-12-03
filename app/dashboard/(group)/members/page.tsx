@@ -118,10 +118,10 @@ export default function Member() {
                 <td className="px-6 py-4">
                   <div className="flex gap-3 justify-center">
                     <div className="my-2 flex gap-3">
-                      <Link className="mb-3" href={`/dashboard/members/${data.id}/edit`}>
+                      <Link className="mb-3" href={`/dashboard/members/${customer.id}/edit`}>
                         <FontAwesomeIcon className="hover:cursor-pointer" icon={faPencil} size="xl" />
                       </Link>
-                      <button className="mb-3" onClick={() => handleDelete(data.id)}>
+                      <button className="mb-3" onClick={() => handleDelete(customer.id)}>
                         <FontAwesomeIcon className="hover:cursor-pointer" icon={faTrash} size="xl" style={{ color: '#7d7f82' }} />
                       </button>
                     </div>

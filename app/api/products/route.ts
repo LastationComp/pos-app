@@ -5,9 +5,15 @@ export async function GET(req: Request) {
   const jsonPath = process.cwd() + '/app/_lib/database/db.json';
   const file = await fs.readFile(jsonPath, 'utf8');
   const parsed = JSON.parse(file);
-  const data = parsed.products;
   const url = new URL(req.url);
-  const urlPage: number = Number(url.searchParams.get('page') ?? 1);
+  let urlPage: number = Number(url.searchParams.get('page') ?? 1);
+  const query = url.searchParams.get('q');
+  const data = parsed.products.filter((data: any) => {
+    if (!query) return true;
+    urlPage = 1;
+    const search = new RegExp(`${query.toLocaleLowerCase()}`, 'g');
+    return search.test(data.product_name.toLowerCase()) || search.test(data.product_name.toLowerCase());
+  });
   const paginate: number = !Number(url.searchParams.get('paginate')) ? data.length : Number(url.searchParams.get('paginate'));
   const page: number = Math.abs(Math.ceil(data.length / paginate));
   const pageNow = {

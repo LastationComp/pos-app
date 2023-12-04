@@ -18,7 +18,7 @@ export default function Navbar() {
     <nav className="bg-gray-300 border-gray-200 dark:bg-gray-900 w-auto p-4">
       <div className=" flex items-center justify-between">
         <ul className="text-gray-600 text-lg flex gap-3">
-          <li className='block md:hidden'>
+          <li className='block'>
             <Link href={'/dashboard'} className='my-auto'>
               <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path

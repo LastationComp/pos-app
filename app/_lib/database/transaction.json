@@ -1,0 +1,19 @@
+{
+  "product_selected": [
+    {
+      "product_name": "Sangobion",
+      "barcode": "120390129310221",
+      "select_selling_units": [
+        { "selling_unit": "kardus", "price": 80000, "stock": 1 },
+        { "selling_unit": "lembar", "price": 8000, "stock": 13 },
+        { "selling_unit": "biji", "price": 1000, "stock": 135 }
+      ],
+      "price": null,
+      "selling_unit": "lembar"
+    }
+  ],
+  "discount": 0,
+  "buy_price": 0,
+  "change": null,
+  "sub_total": 0
+}
